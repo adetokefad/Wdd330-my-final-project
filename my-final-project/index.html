@@ -8,7 +8,6 @@
   <meta name="description" content="Discover and search for your favorite songs, artists, and genres with TuneMate. Create playlists and enjoy music like never before." />
      <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <script defer type="module" src="js/main.js"></script>
 </head>
 <body>
   <!-- Header / Navigation -->
@@ -45,6 +44,14 @@
     </div>
   </section>
 
+     <!-- Playlist Section -->
+    <section id="playlist" class="playlist">
+  <h3>Your Playlist</h3>
+  <div id="playlistContainer" class="songs-grid">
+    <p class="empty-message">Your playlist is empty. Start adding songs!</p>
+  </div>
+</section>
+
   <!-- Results Section -->
   <section class="results">
     <div class="container">
@@ -61,5 +68,6 @@
       <p>&copy; 2025 TuneMate. Made with ❤️ by Toke</p>
     </div>
   </footer>
+     <script src="./js/main.js"></script>
 </body>
 </html>
