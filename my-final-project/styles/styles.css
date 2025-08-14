@@ -1,4 +1,13 @@
 /* ===== RESET & BASE ===== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f5f5f5;
+  --button-color: #1db954;
+  --button-hover-color: #17a84b;
+  --header-bg: #aaaaaa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +16,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -26,9 +35,10 @@ a {
 
 /* ===== HEADER ===== */
 header {
-  background-color: #1e1e1e;
+  background-color: var(--header-bg);
   padding: 1rem 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 3px solid #17a84b;
+  color: var(--text-color);
 }
 
 .nav {
@@ -40,7 +50,7 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1db954;
+  display: flex;
 }
 
 .nav-links {
@@ -55,14 +65,16 @@ header {
 }
 
 .nav-links li a:hover {
-  color: #1db954;
+  color: red;
 }
 
 /* ===== HERO / SEARCH SECTION ===== */
 .hero {
   padding: 2rem 0;
   text-align: center;
-  background: #1b1b1b;
+  background: var(--header-bg);
+  color: var(--text-color);
+  border-bottom: 3px solid #17a84b;
 }
 
 .hero h2 {
@@ -89,8 +101,8 @@ header {
 }
 
 .search-bar button {
-  background-color: #1db954;
-  color: #fff;
+  background-color: var(--button-color);
+  color: var(--text-color);
   padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 5px;
@@ -100,7 +112,7 @@ header {
 }
 
 .search-bar button:hover {
-  background-color: #17a84b;
+  background-color: var(--button-hover-color);
 }
 
 /* ===== RESULTS SECTION ===== */
@@ -121,7 +133,7 @@ header {
 
 /* ===== SONG CARD PLACEHOLDER ===== */
 .song-card {
-  background-color: #1f1f1f;
+  background-color: var(--header-bg);
   padding: 1rem;
   border-radius: 8px;
   transition: 0.3s ease;
@@ -129,6 +141,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: var(--text-color);
 }
 
 .song-card img {
@@ -144,17 +157,17 @@ header {
 
 .song-card p {
   font-size: 0.9rem;
-  color: #aaa;
+  color: #000000;
 }
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: #1e1e1e;
+  background-color: var(--header-bg);
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
-  color: #aaa;
-  border-top: 1px solid #333;
+  color: var(--text-color);
+  border-top: 3px solid #17a84b;
 }
 
 /* ===== RESPONSIVE TWEAKS ===== */
@@ -163,3 +176,4 @@ footer {
     flex-direction: column;
   }
 }
+

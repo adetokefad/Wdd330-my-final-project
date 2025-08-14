@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TuneMate | Discover Music</title>
-  <meta name="author" content="Toke" />
-  <meta name="description" content="Discover and search for your favorite songs, artists, and genres with TuneMate. Create playlists and enjoy music like never before." />
-     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-  <!-- Header / Navigation -->
-  <header>
-    <div class="container nav">
-      <h1 class="logo">🎵 TuneMate</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#search">Search</a></li>
-          <li><a href="#playlist">Playlist</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero / Search Section -->
-  <section id="search" class="hero">
-    <div class="container">
-      <h2>Find Your Next Favorite Song</h2>
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search songs, artists..." />
-        <select id="genreFilter">
-          <option value="">All Genres</option>
-          <option value="132">Pop</option>
-          <option value="116">Hip Hop</option>
-          <option value="152">Afrobeat</option>
-          <option value="165">Gospel</option>
-          <option value="129">Jazz</option>
-          <option value="85">RnB</option>
-          <option value="113">Rock</option>
-        </select>
-        <button id="searchBtn">Search</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuneMate | Discover Music</title>
+    <meta name="author" content="Toke" />
+    <meta
+      name="description"
+      content="Discover and search for your favorite songs, artists, and genres with TuneMate. Create playlists and enjoy music like never before."
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon/tunemates_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header>
+      <div class="container nav">
+        <h1 class="logo">🎵 TuneMate</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#search">Search</a></li>
+            <li><a href="#playlist">Playlist</a></li>
+          </ul>
+          <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode" class="toggle" />
+            <label for="dark-mode"></label>
+          </div>
+          <div class="menu-icon" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-     <!-- Playlist Section -->
+    <!-- Hero / Search Section -->
+    <section id="search" class="hero">
+      <div class="container">
+        <h2>Find Your Next Favorite Song</h2>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search songs, artists..."
+          />
+          <select id="genreFilter">
+            <option value="">All Genres</option>
+            <option value="132">Pop</option>
+            <option value="116">Hip Hop</option>
+            <option value="152">Afrobeat</option>
+            <option value="165">Gospel</option>
+            <option value="129">Jazz</option>
+            <option value="85">RnB</option>
+            <option value="113">Rock</option>
+          </select>
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playlist Section -->
     <section id="playlist" class="playlist">
-  <h3>Your Playlist</h3>
-  <div id="playlistContainer" class="songs-grid">
-    <p class="empty-message">Your playlist is empty. Start adding songs!</p>
-  </div>
-</section>
-
-  <!-- Results Section -->
-  <section class="results">
-    <div class="container">
-      <h3>Search Results</h3>
-      <div id="songsContainer" class="songs-grid">
-        <!-- Song cards will appear here -->
+      <h3>Your Playlist</h3>
+      <div id="playlistContainer" class="songs-grid">
+        <p class="empty-message">Your playlist is empty. Start adding songs!</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 TuneMate. Made with ❤️ by Toke</p>
-    </div>
-  </footer>
-     <script src="./js/main.js"></script>
-</body>
+    <!-- Results Section -->
+    <section class="results">
+      <div class="container">
+        <h3>Search Results</h3>
+        <div id="songsContainer" class="songs-grid">
+          <!-- Song cards will appear here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 TuneMate. Made with ❤️ by Toke</p>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/navigation.js"></script>
+  </body>
 </html>
